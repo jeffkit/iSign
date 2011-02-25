@@ -1,295 +1,0 @@
-TiSign
-v7
-r0
-t319608206.153981
-cCheck dependencies
-cProcessInfoPlistFile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/Info.plist iSign-Info.plist
-cCompileXIB /Users/jeff/local/learn_ios/iSign/MainWindow.xib
-cCompileXIB /Users/jeff/local/learn_ios/iSign/DetailView.xib
-cProcessPCH /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch.gch iSign_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/main.o /Users/jeff/local/learn_ios/iSign/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSignAppDelegate.o /Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/RootViewController.o /Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/DetailViewController.o /Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign normal i386
-cGenerateDSYMFile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app.dSYM /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign
-cTouch /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
-c000000004CB3FA080000000000001ADD
-t1286863368
-s6877
-
-N/Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.h
-c000000004D5C9E000000000000000250
-t1297915392
-s592
-i<UIKit/UIKit.h>
-
-N/Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m
-c000000004D5C9E000000000000000DBB
-t1297915392
-s3515
-i"DetailViewController.h"
-i"RootViewController.h"
-
-N/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.h
-c000000004D5C9E00000000000000017E
-t1297915392
-s382
-i<UIKit/UIKit.h>
-
-N/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m
-c000000004D5C9E0000000000000010B4
-t1297915392
-s4276
-i"RootViewController.h"
-i"DetailViewController.h"
-
-N/Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.h
-c000000004D5C9E0000000000000002FE
-t1297915392
-s766
-i<UIKit/UIKit.h>
-
-N/Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m
-c000000004D5C9E0000000000000007B6
-t1297915392
-s1974
-i"iSignAppDelegate.h"
-i"RootViewController.h"
-i"DetailViewController.h"
-
-N/Users/jeff/local/learn_ios/iSign/DetailView.xib
-c000000004D5C9E000000000000005000
-t1297915392
-s20480
-
-N/Users/jeff/local/learn_ios/iSign/MainWindow.xib
-c000000004D5C9E0000000000000069C0
-t1297915392
-s27072
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app
-t1297915406
-s238
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app.dSYM
-t1297915406
-s102
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/DetailView.nib
-t1297915403
-s1452
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/Info.plist
-t1297915403
-s790
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/MainWindow.nib
-t1297915403
-s1932
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/PkgInfo
-t1297915403
-s8
-
-N/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign
-t1297915406
-s26864
-
-N/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/DetailViewController.o
-t1297915406
-s50228
-
-N/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/RootViewController.o
-t1297915406
-s46396
-
-N/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSign.LinkFileList
-c000000004D5C9E0B00000000000001EE
-t1297915403
-s494
-
-N/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSignAppDelegate.o
-t1297915405
-s54140
-
-N/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/main.o
-t1297915405
-s6292
-
-N/Users/jeff/local/learn_ios/iSign/iSign_Prefix.pch
-c000000004D5C9E00000000000000013C
-t1297915392
-s316
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/jeff/local/learn_ios/iSign/main.m
-c000000004D5C9E00000000000000015A
-t1297915392
-s346
-i<UIKit/UIKit.h>
-
-N/var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch.gch
-t1297915405
-s15453392
-
-NiSign-Info.plist
-c000000004D5C9E0000000000000004D6
-t1297915392
-s1238
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies319608203#319608203#0(0"0(0#1#0"8617936672#0"0#
-
-CCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/DetailViewController.o /Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319608205.995828
-e319608206.104924
-r1
-xCompileC
-xbuild/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/DetailViewController.o
-x/Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m319608205#319608206#0(0"0(0#0#64"/Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m8621227328#1859"    cd /Users/jeff/local/learn_ios/iSign    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-generated-files.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-own-target-headers.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-all-target-headers.hmap -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-project-headers.hmap -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -I/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/include -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources/i386 -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources -include /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch -c /Users/jeff/local/learn_ios/iSign/Classes/DetailViewController.m -o /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/DetailViewController.o0#
-
-CCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/RootViewController.o /Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319608205.958828
-e319608206.089002
-r1
-xCompileC
-xbuild/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/RootViewController.o
-x/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m319608205#319608206#0(0"0(0#0#62"/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m8617599872#1855"    cd /Users/jeff/local/learn_ios/iSign    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-generated-files.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-own-target-headers.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-all-target-headers.hmap -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-project-headers.hmap -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -I/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/include -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources/i386 -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources -include /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch -c /Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m -o /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/RootViewController.o0#
-
-CCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSignAppDelegate.o /Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319608205.890305
-e319608205.995712
-r1
-xCompileC
-xbuild/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSignAppDelegate.o
-x/Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m319608205#319608205#0(0"0(0#0#60"/Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m8619230400#1851"    cd /Users/jeff/local/learn_ios/iSign    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-generated-files.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-own-target-headers.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-all-target-headers.hmap -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-project-headers.hmap -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -I/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/include -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources/i386 -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources -include /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch -c /Users/jeff/local/learn_ios/iSign/Classes/iSignAppDelegate.m -o /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSignAppDelegate.o0#
-
-CCompileC build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/main.o /Users/jeff/local/learn_ios/iSign/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319608205.888915
-e319608205.958720
-r1
-xCompileC
-xbuild/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/main.o
-x/Users/jeff/local/learn_ios/iSign/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@48"Compile /Users/jeff/local/learn_ios/iSign/main.m319608205#319608205#0(0"0(0#0#40"/Users/jeff/local/learn_ios/iSign/main.m8621186656#1819"    cd /Users/jeff/local/learn_ios/iSign    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-generated-files.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-own-target-headers.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-all-target-headers.hmap -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-project-headers.hmap -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -I/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/include -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources/i386 -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources -include /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch -c /Users/jeff/local/learn_ios/iSign/main.m -o /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/jeff/local/learn_ios/iSign/DetailView.xib
-s319608203.075811
-e319608203.561556
-r1
-xCompileXIB
-x/Users/jeff/local/learn_ios/iSign/DetailView.xib
-lSLF07#2@25"CompileXIB DetailView.xib319608203#319608203#0(0"0(0#0#48"/Users/jeff/local/learn_ios/iSign/DetailView.xib8617094048#553"    cd /Users/jeff/local/learn_ios/iSign    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/DetailView.nib /Users/jeff/local/learn_ios/iSign/DetailView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/jeff/local/learn_ios/iSign/MainWindow.xib
-s319608203.075047
-e319608203.510006
-r1
-xCompileXIB
-x/Users/jeff/local/learn_ios/iSign/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib319608203#319608203#0(0"0(0#0#48"/Users/jeff/local/learn_ios/iSign/MainWindow.xib8619604704#553"    cd /Users/jeff/local/learn_ios/iSign    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/MainWindow.nib /Users/jeff/local/learn_ios/iSign/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CGenerateDSYMFile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app.dSYM /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign
-s319608206.130770
-e319608206.150771
-r1
-xGenerateDSYMFile
-x/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app.dSYM
-x/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/iSign.app.dSYM build/Debug-iphonesimulator/iSign.app/iSign319608206#319608206#0(0"0(0#0#77"/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign8617822368#362"    cd /Users/jeff/local/learn_ios/iSign    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign -o /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app.dSYM0#
-
-CLd /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign normal i386
-s319608206.105020
-e319608206.130663
-r1
-xLd
-x/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign
-xnormal
-xi386
-lSLF07#2@82"Link /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign319608206#319608206#0(0"0(0#0#0"8619498912#865"    cd /Users/jeff/local/learn_ios/iSign    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -filelist /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/Objects-normal/i386/iSign.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/iSign0#
-
-CProcessInfoPlistFile /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/Info.plist iSign-Info.plist
-s319608203.071553
-e319608203.074965
-r1
-xProcessInfoPlistFile
-x/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/Info.plist
-xiSign-Info.plist
-lSLF07#2@24"Process iSign-Info.plist319608203#319608203#0(0"0(0#0#50"/Users/jeff/local/learn_ios/iSign/iSign-Info.plist8619225344#458"    cd /Users/jeff/local/learn_ios/iSign    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility iSign-Info.plist -genpkginfo /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app/Info.plist0#
-
-CProcessPCH /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch.gch iSign_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s319608203.561685
-e319608205.888703
-r1
-xProcessPCH
-x/var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch.gch
-xiSign_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@27"Precompile iSign_Prefix.pch319608203#319608205#0(0"0(0#0#50"/Users/jeff/local/learn_ios/iSign/iSign_Prefix.pch8620116096#1718"    cd /Users/jeff/local/learn_ios/iSign    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-generated-files.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-own-target-headers.hmap -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-all-target-headers.hmap -iquote /Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/iSign-project-headers.hmap -F/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator -I/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/include -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources/i386 -I/Users/jeff/local/learn_ios/iSign/build/iSign.build/Debug-iphonesimulator/iSign.build/DerivedSources -c /Users/jeff/local/learn_ios/iSign/iSign_Prefix.pch -o /var/folders/Pu/PuV+dv83Gkuf58QTvFOeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iSign_Prefix-dxnyexnavbjuhyfsrlsbipyanswz/iSign_Prefix.pch.gch0#
-
-CTouch /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app
-s319608206.150866
-e319608206.153938
-r1
-xTouch
-x/Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app
-lSLF07#2@77"Touch /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app319608206#319608206#0(0"0(0#0#0"8618179200#266"    cd /Users/jeff/local/learn_ios/iSign    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jeff/local/learn_ios/iSign/build/Debug-iphonesimulator/iSign.app0#
-

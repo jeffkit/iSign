@@ -1,8 +1,0 @@
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:38: warning: 'RootViewController' may not respond to '-reloadSource'
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:38: warning: (Messages without a matching method signature
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:38: warning: will be assumed to return 'id' and accept
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:38: warning: '...' as arguments.)
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m: In function '-[RootViewController reloadSource]':
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:55: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
-/Users/jeff/local/learn_ios/iSign/Classes/RootViewController.m:65: warning: 'UIView' may not respond to '-reloadData'
