@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="8"/>
+			<integer value="63"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -86,8 +86,20 @@
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="410698538"/>
 							</object>
+							<object class="IBUIBarButtonItem" id="796004807">
+								<string key="IBUITitle">画笔象素</string>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIStyle">1</int>
+								<reference key="IBUIToolbar" ref="410698538"/>
+							</object>
+							<object class="IBUIBarButtonItem" id="668544786">
+								<string key="IBUITitle">画笔颜色</string>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<int key="IBUIStyle">1</int>
+								<reference key="IBUIToolbar" ref="410698538"/>
+							</object>
 							<object class="IBUIBarButtonItem" id="438511570">
-								<string key="IBUITitle">同步</string>
+								<string key="IBUITitle">我来也！</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="410698538"/>
@@ -156,6 +168,22 @@
 					</object>
 					<int key="connectionID">73</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">changePixel:</string>
+						<reference key="source" ref="796004807"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">78</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">changeColor:</string>
+						<reference key="source" ref="668544786"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">79</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -200,6 +228,8 @@
 							<reference ref="254538868"/>
 							<reference ref="471571043"/>
 							<reference ref="438511570"/>
+							<reference ref="796004807"/>
+							<reference ref="668544786"/>
 						</object>
 						<reference key="parent" ref="647120888"/>
 					</object>
@@ -218,6 +248,16 @@
 						<reference key="object" ref="438511570"/>
 						<reference key="parent" ref="410698538"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">75</int>
+						<reference key="object" ref="796004807"/>
+						<reference key="parent" ref="410698538"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">76</int>
+						<reference key="object" ref="668544786"/>
+						<reference key="parent" ref="410698538"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -228,9 +268,12 @@
 					<string>-2.CustomClassName</string>
 					<string>45.IBPluginDependency</string>
 					<string>63.IBPluginDependency</string>
+					<string>63.IBViewBoundsToFrameTransform</string>
 					<string>68.IBPluginDependency</string>
 					<string>69.IBPluginDependency</string>
 					<string>70.IBPluginDependency</string>
+					<string>75.IBPluginDependency</string>
+					<string>76.IBPluginDependency</string>
 					<string>8.IBEditorWindowLastContentRect</string>
 					<string>8.IBPluginDependency</string>
 				</object>
@@ -240,10 +283,15 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAwigAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{168, 52}, {783, 704}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{599, 45}, {783, 704}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -263,7 +311,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">74</int>
+			<int key="maxID">79</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -275,12 +323,16 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeColor:</string>
+							<string>changePixel:</string>
 							<string>clearCanvas:</string>
 							<string>saveImage:</string>
 							<string>sync:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -290,12 +342,22 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeColor:</string>
+							<string>changePixel:</string>
 							<string>clearCanvas:</string>
 							<string>saveImage:</string>
 							<string>sync:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">changeColor:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">changePixel:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">clearCanvas:</string>
 								<string key="candidateClassName">id</string>

@@ -24,6 +24,7 @@
 	IBOutlet UIBarButtonItem *_btSync;
 	
 	NSOperationQueue *_queue;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
@@ -42,5 +43,7 @@
 - (IBAction)clearCanvas:(id)sender;
 - (IBAction)saveImage:(id)sender;
 - (IBAction)sync:(id)sender;
+- (IBAction)changePixel:(id)sender;
+- (IBAction)changeColor:(id)sender;
 
 @end

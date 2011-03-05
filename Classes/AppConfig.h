@@ -11,7 +11,7 @@
 
 // -------------------- Debug Function --------------------------
 
-#define DEBUG = 1
+#define DEBUG 1
 
 #ifdef DEBUG
 #define debug_NSLog(format,...) NSLog(format,##__VA_ARGS__)
@@ -19,5 +19,7 @@
 #define debug_NSLog(format,...)
 #endif
 
+#define EVENT_BRUSH_PIXEL_CHANGED @"BrushPixelChanged"
+#define EVENT_BRUSH_COLOR_CHANGED @"BrushColorChanged"
 
 

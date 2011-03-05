@@ -8,6 +8,7 @@
 
 #import "SignViewController.h"
 #import "AppConfig.h"
+#import "PixelAdapterController.h"
 
 #define kDetailViewFrame CGRectMake(0, 44, 768, 960)
 #define kDrawingFrame CGRectMake(0, 0, 768, 960)
@@ -16,6 +17,8 @@
 
 @synthesize drawImage = _drawImage;
 @synthesize file = _file;
+@synthesize color = _color;
+@synthesize pixel = _pixel;
 
 /**
  从文件名初始化视图
@@ -51,7 +54,34 @@
 	debug_NSLog(@"views : %@",self.view.subviews);
 	mouseMoved = 0;
 	[image release];
-	debug_NSLog(@"end of [SignViewController viewDidLoad]");
+	
+	
+	self.color = [UIColor redColor];
+	self.pixel = 10.0;
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(updatePixel:)
+												 name:EVENT_BRUSH_PIXEL_CHANGED
+											   object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(updateColor:)
+												 name:EVENT_BRUSH_COLOR_CHANGED
+											   object:nil];
+}
+
+-(void)updatePixel:(id)sender{
+	debug_NSLog(@"[SignViewController updatePixel:%@]",[sender userInfo]);
+	NSDictionary *dic = [sender userInfo];
+	PixelAdapterController *pc = (PixelAdapterController *)[dic objectForKey:@"adapter"];
+	self.pixel = pc.pixel;
+}
+
+-(void)updateColor:(id)sender{
+	debug_NSLog(@"[SignViewController updateColor:%@]",[sender userInfo]);
+	NSDictionary *dic = [sender userInfo];
+	self.color = [dic objectForKey:@"color"];
+	debug_NSLog(@"color updated to %@",self.color);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -76,6 +106,7 @@
 	debug_NSLog(@"[SignViewController deallo]");
 	[_drawImage release];
 	[_file release];
+	[_color release];
     [super dealloc];
 }
 
@@ -87,10 +118,6 @@
 	mouseSwiped = NO;
 	UITouch *touch = [touches anyObject];
 	lastPoint = [touch locationInView:self.drawImage];
-	debug_NSLog(@"last Point x : %f,y : %f",lastPoint.x,lastPoint.y);	
-	//lastPoint.y -= 20;
-	debug_NSLog(@"last Point after ajust : %f",lastPoint.y);
-	 
 }
 
 
@@ -99,45 +126,42 @@
 	
 	UITouch *touch = [touches anyObject];	
 	CGPoint currentPoint = [touch locationInView:self.drawImage];
-	//currentPoint.y -= 20;
 	
-	
-	UIGraphicsBeginImageContext(self.view.frame.size);
-	[self.drawImage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-	CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-	CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 10.0);
-	CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, 1.0);
-	CGContextBeginPath(UIGraphicsGetCurrentContext());
-	CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
-	CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y);
-	CGContextStrokePath(UIGraphicsGetCurrentContext());
-	self.drawImage.image = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
+	[self drawLinefrom:lastPoint to:currentPoint flush:NO];
 	
 	lastPoint = currentPoint;
-	
-	mouseMoved++;
-	
-	if (mouseMoved == 10) {
-		mouseMoved = 0;
-	}
-	
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	debug_NSLog(@"[SignViewController touchesEnd]");
 	if(!mouseSwiped) {
-		UIGraphicsBeginImageContext(self.view.frame.size);
-		[self.drawImage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-		CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-		CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 10.0);
-		CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, 1.0);
-		CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
-		CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
-		CGContextStrokePath(UIGraphicsGetCurrentContext());
-		CGContextFlush(UIGraphicsGetCurrentContext());
-		self.drawImage.image = UIGraphicsGetImageFromCurrentImageContext();
-		UIGraphicsEndImageContext();
+		[self drawLinefrom:lastPoint to:lastPoint flush:YES];
 	}
+}
+
+-(void)drawLinefrom:(CGPoint)from to:(CGPoint)to flush:(BOOL)flush{
+	UIGraphicsBeginImageContext(self.view.frame.size);
+	[self.drawImage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+	
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	CGContextSetLineCap(context, kCGLineCapRound);
+	CGContextSetLineWidth(context,self.pixel);
+	
+	if (CGColorGetNumberOfComponents(self.color.CGColor) == 4) {
+		const CGFloat *c = CGColorGetComponents(self.color.CGColor);
+		CGContextSetRGBStrokeColor(context, c[0], c[1], c[2], c[3]);
+	}
+	
+	CGContextMoveToPoint(context, from.x, from.y);
+	CGContextAddLineToPoint(context, to.x, to.y);
+	CGContextStrokePath(context);
+	
+	if (flush) {
+		CGContextFlush(context);
+	}
+
+	self.drawImage.image = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
 }
 
 

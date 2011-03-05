@@ -12,6 +12,8 @@
 #import "AppConfig.h"
 #import "FileUtils.h"
 #import "ASIFormDataRequest.h"
+#import "PixelAdapterController.h"
+#import "ColorAdapterController.h"
 
 @interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
@@ -54,7 +56,6 @@
 		debug_NSLog(@"the date object is : %@",[dateFormatter stringFromDate:now]);
 		NSString *file = [dateStr stringByAppendingString:@".png"];
 		self.signViewController.file = [docsDir stringByAppendingPathComponent:file];
-
 		
 		[dateFormatter release];
 		newImage = YES;
@@ -65,6 +66,40 @@
 		// 如果是新建的文件，则通知上层控制器更新。
 		[[NSNotificationCenter defaultCenter] postNotificationName:@"newImageSaved" object:nil];	
 	}
+}
+
+//修改画笔象素
+- (IBAction)changePixel:(id)sender{
+	if ([self.popoverController isPopoverVisible]) {
+		return;
+	}
+	debug_NSLog(@"[DetailViewController ChangePixel]");
+	debug_NSLog(@"color of SignViewController is : %@",self.signViewController.color);
+	PixelAdapterController *pixelController = [[PixelAdapterController alloc]
+											   initWithPixel:self.signViewController.pixel 
+											   color:self.signViewController.color];
+	UIPopoverController *popCtl = [[UIPopoverController alloc] initWithContentViewController:pixelController];
+	[pixelController release];
+	
+	[popCtl setPopoverContentSize:CGSizeMake(210, 63)];
+	[popCtl presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+	debug_NSLog(@"DetailViewController changePixel Done!");
+	self.popoverController = popCtl;
+}
+
+//修改画笔color
+- (IBAction)changeColor:(id)sender{
+	if ([self.popoverController isPopoverVisible]) {
+		return;
+	}
+	ColorAdapterController *colorController = [[ColorAdapterController alloc]
+										initWithColor:self.signViewController.color];
+	UIPopoverController *colorCtl = [[UIPopoverController alloc] initWithContentViewController:colorController];
+	[colorController release];
+	
+	[colorCtl setPopoverContentSize:CGSizeMake(210, 440)];
+	[colorCtl presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+	self.popoverController = colorCtl; 
 }
 
 - (IBAction)sync:(id)sender{
@@ -150,9 +185,6 @@
 }
 
 
-/**
- 
- */
 - (void)configureView {
 	debug_NSLog(@"[DetailViewController configureView]");
 	if (self.signViewController != nil) {
@@ -163,9 +195,6 @@
 	self.signViewController = sctl;
 	[self.view addSubview:self.signViewController.view];
 	[sctl release]; 
-	
-	
-	//self.detailDescriptionLabel.text = self.detailItem;
 }
 
 
@@ -209,28 +238,8 @@
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
 }
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
 
 - (void)viewDidUnload {
     // Release any retained subviews of the main view.

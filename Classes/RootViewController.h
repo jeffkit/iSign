@@ -18,4 +18,6 @@
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 @property (nonatomic, retain) NSMutableArray *files;
 
+-(void)reloadSource;
+
 @end

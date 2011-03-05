@@ -25,8 +25,10 @@
 		1FA16B3A131740E200529890 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA16B39131740E200529890 /* libz.1.2.3.dylib */; };
 		1FA16B3C131740F000529890 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA16B3B131740F000529890 /* SystemConfiguration.framework */; };
 		1FA16B931317627B00529890 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FA16B921317627B00529890 /* Settings.bundle */; };
+		1FA16BC513179FE500529890 /* PixelAdapterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA16BC413179FE500529890 /* PixelAdapterController.m */; };
 		1FCEBE76130D154F00EB6249 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEBE75130D154F00EB6249 /* SignViewController.m */; };
 		1FCEBF2A130D26FF00EB6249 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEBF29130D26FF00EB6249 /* FileUtils.m */; };
+		1FE51C071321244600FF8D4E /* ColorAdapterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE51C061321244600FF8D4E /* ColorAdapterController.m */; };
 		2804200B108E984D000629CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28042008108E984D000629CD /* RootViewController.m */; };
 		2804200C108E984D000629CD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804200A108E984D000629CD /* DetailViewController.m */; };
 		2804203C108E9BAB000629CD /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailView.xib */; };
@@ -67,11 +69,15 @@
 		1FA16B39131740E200529890 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		1FA16B3B131740F000529890 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1FA16B921317627B00529890 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1FA16BC313179FE500529890 /* PixelAdapterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelAdapterController.h; sourceTree = "<group>"; };
+		1FA16BC413179FE500529890 /* PixelAdapterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixelAdapterController.m; sourceTree = "<group>"; };
 		1FCEBE11130CF10700EB6249 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		1FCEBE74130D154F00EB6249 /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
 		1FCEBE75130D154F00EB6249 /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
 		1FCEBF28130D26FF00EB6249 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
 		1FCEBF29130D26FF00EB6249 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
+		1FE51C051321244600FF8D4E /* ColorAdapterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorAdapterController.h; sourceTree = "<group>"; };
+		1FE51C061321244600FF8D4E /* ColorAdapterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorAdapterController.m; sourceTree = "<group>"; };
 		28042007108E984D000629CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28042008108E984D000629CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28042009108E984D000629CD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 				1FCEBE11130CF10700EB6249 /* AppConfig.h */,
 				1FCEBE74130D154F00EB6249 /* SignViewController.h */,
 				1FCEBE75130D154F00EB6249 /* SignViewController.m */,
+				1FA16BC313179FE500529890 /* PixelAdapterController.h */,
+				1FA16BC413179FE500529890 /* PixelAdapterController.m */,
+				1FE51C051321244600FF8D4E /* ColorAdapterController.h */,
+				1FE51C061321244600FF8D4E /* ColorAdapterController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -298,6 +308,8 @@
 				1FA16AB61317369A00529890 /* ASIHTTPRequest.m in Sources */,
 				1FA16AB71317369A00529890 /* ASIInputStream.m in Sources */,
 				1FA16AB81317369A00529890 /* ASINetworkQueue.m in Sources */,
+				1FA16BC513179FE500529890 /* PixelAdapterController.m in Sources */,
+				1FE51C071321244600FF8D4E /* ColorAdapterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
